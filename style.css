@@ -1,0 +1,40 @@
+body {
+    background: #fcfcfc;
+    width: 900px;
+}
+
+#title, .subtitle, .post_title {
+    color: blue;
+}
+
+#title_img {
+    border: 3px solid black;
+    border-radius: 16px;
+}
+
+.post_title {
+    font-size: 16;
+    font-style: ital;
+}
+
+.post {
+    background: white;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.post_img {
+    width: 100%;
+}
+
+.contact_list {
+    list-style-type: none;
+    padding-left: 15px;
+
+}
+
+a {
+    text-decoration: none;
+}
