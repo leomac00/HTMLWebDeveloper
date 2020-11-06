@@ -1,0 +1,105 @@
+:root {
+	--vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+	background: var(--preto);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+header .logo {
+	color: var(--vermelho);
+	font-family: "Arial Black", bold, sans-serif;
+	font-size: 40px;
+	margin-left: 10px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #aaa;
+    margin-left: 10px;
+    
+    transition: 350ms ease all;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+	font-size: 16px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+		url(../img/batman_lego_cover.jpg);
+	background-size: cover;
+	height: 400px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-left: 15px;
+    font-size: 12px;
+    cursor: pointer;
+
+    transition: 350ms ease all;
+}
+
+.botao:hover {
+    background: white;
+    color: black;
+}
+
+.fas {
+    margin: 5px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
