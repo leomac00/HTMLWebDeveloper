@@ -1,0 +1,41 @@
+body {
+    font: 20px, arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ADDADA;
+}
+
+.quem-somos {
+    background-color: #8181f7;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.parceiros {
+    background-color: #a7a7e7;
+    color: white;
+}
+
+.servicos {
+    background-color: #8181f7;
+    color: white;
+}
+
+.margin {
+    padding: 30px;
+}
+
+.rounded-circle {
+    overflow: hidden;
+
+    height: 200px;
+    width: 200px;
+}
+footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
