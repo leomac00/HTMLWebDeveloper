@@ -2,7 +2,12 @@ const canvas = document.getElementById("snake"); //associa o canvas à variável
 const context = canvas.getContext("2d"); //associa o contexto do canvas à variável 'context'
 let box = 32; //tamanho do pixel
 let snake = []; //Array responsável por manter elementos do corpo da cobrinha
+let food = {
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box
+};
 let direction = "right"; //Guarda a atual direção de movimento da cobrinha
+
 
 snake[0] = {
 	x: 8 * box,
@@ -21,6 +26,11 @@ function renderSnake() {
 	}
 } //Renderiza a cobrinha
 
+function renderFood() {
+    context.fillStyle = "red";
+    context.fillRect(food.x, food.y, box, box);
+}
+
 document.addEventListener("keydown", cd); //esta função 'escuta' um evento na página, no caso o pressionar de uma tecla (keydown)
 
 function cd(event) {
@@ -37,7 +47,8 @@ function playGame() {
 	if (snake[0].y < 0 && direction == "up") snake[0].y = 16 * box;
 
 	renderBG();
-	renderSnake();
+    renderSnake();
+    renderFood();
 
 	let snakeX = snake[0].x;
 	let snakeY = snake[0].y;
